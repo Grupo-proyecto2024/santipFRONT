@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(150, 100, 200)
+  ),
+  rgb(100, 50, 150);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.cuadro{
+  border-radius: 20px;
+}
+
+.margint{
+  margin-right: 60px;
+  text-align: center;
+  border-bottom: 5px solid #000;
+  border-radius: 10px;
+  background-color: rgba(137, 43, 226, 0.5);
+  padding: 10px;
+}
+
+.fondo{
+  background-color: rgba(115, 58, 133, 0.281);
+}
